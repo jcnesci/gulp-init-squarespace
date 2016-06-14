@@ -13,6 +13,8 @@ var transform = require('vinyl-transform');
 var source = require('vinyl-source-stream');
 var LessPluginAutoPrefix = require('less-plugin-autoprefix');
 
+console.log("initiating");
+
 /**
  * Watches for changes to certain files and builds the site accordingly.
  */
@@ -98,7 +100,9 @@ gulp.task('invalidate-cached-assets', function () {
 
       return match + '?v=' + Date.now();
     }))
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest(function(file) {
+      return file.base;
+    }));
 });
 
 /**
