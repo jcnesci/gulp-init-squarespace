@@ -8,7 +8,6 @@ First fork and then clone this repository. Then in the command line do the follo
 
     cd gulp-init-squarespace
     npm install
-    cd template
     git clone https://{my-site-title}.squarespace.com/template.git
     gulp watch
 

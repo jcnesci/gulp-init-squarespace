@@ -1,6 +1,6 @@
 {
   "name": "grunt-squarespace-init",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "devDependencies": {
     "babelify": "^6.3.0",
     "browserify": "^11.0.1",
