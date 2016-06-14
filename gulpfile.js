@@ -13,8 +13,6 @@ var transform = require('vinyl-transform');
 var source = require('vinyl-source-stream');
 var LessPluginAutoPrefix = require('less-plugin-autoprefix');
 
-console.log("initiating");
-
 /**
  * Watches for changes to certain files and builds the site accordingly.
  */
